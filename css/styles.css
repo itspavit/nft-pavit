@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+
+/* Root variables for design throughout */
+
+:root {
+  /* Primary colors */
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* Secondary colors */
+  --VerydarkbluemainBG: hsl(217, 54%, 11%);
+  --VerydarkbluecardBG: hsl(216, 50%, 16%);
+  --Verydarkblueline: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  /*Font styles*/
+  --fontsize: 1.125rem;
+  --font: "Outfit", sans-serif;
+}
+
+/* Primary Styling below */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+
+body {
+  font-weight: 100;
+  background-color: var(--VerydarkbluemainBG);
+}
+
+/* Styling for card-details */
+h1 {
+  margin: 1rem 0;
+}
+
+a:link {
+  color: var(--White);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--Cyan);
+}
+
+p {
+  color: var(--Verydarkblueline);
+}
+
+.card-details p {
+  margin-bottom: 1rem;
+}
+
+.mainpage {
+  max-width: 300px;
+  max-height: 100%;
+  margin: 4rem auto 2rem auto;
+  background-color: var(--VerydarkbluemainBG);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.card {
+  height: 450px;
+  width: 250px;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: var(--VerydarkbluecardBG);
+}
+
+/* styling for attribute tag */
+.attribution {
+  text-align: center;
+  color: var(--Verydarkblueline);
+}
+
+/* Image styling */
+.img-holder {
+  border-radius: 16px;
+  max-width: 100%;
+  width: 300px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.equilibrium-img img {
+  overflow: hidden;
+  max-width: 100%;
+  width: 250px;
+  border-radius: 16px;
+}
+
+.eyeicon-img {
+  position: absolute;
+}
+
+/* Styling for card info section */
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--Verydarkblueline);
+  padding-bottom: 0.5rem;
+}
+
+.card-info-price span {
+  color: var(--Cyan);
+}
+
+.card-info-time span {
+  color: var(--Verydarkblueline);
+}
+
+/*Styling for author section*/
+.card-author {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.card-author-img img {
+  width: 100%;
+  height: 20px;
+}
+
+.card-author-img {
+  margin-right: 10px;
+}
+
+.card-author-name span {
+  font-weight: lighter;
+}
