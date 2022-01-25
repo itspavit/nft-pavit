@@ -107,7 +107,7 @@ p {
 
 .eyeicon-img img {
   position: absolute;
-  transition: 0.5 ease;
+  transition: 0.5s ease;
   opacity: 0;
   top: 50%;
   left: 50%;
