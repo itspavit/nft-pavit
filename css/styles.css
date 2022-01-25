@@ -36,7 +36,7 @@ h1 {
   margin: 1rem 0;
 }
 
-a:link {
+a {
   color: var(--White);
   text-decoration: none;
 }
@@ -71,6 +71,7 @@ p {
   padding: 24px;
   border-radius: 16px;
   background-color: var(--VerydarkbluecardBG);
+  box-shadow: 10px 10px 10px black;
 }
 
 /* styling for attribute tag */
@@ -83,7 +84,7 @@ p {
 .img-holder {
   border-radius: 16px;
   max-width: 100%;
-  width: 300px;
+  width: 250px;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -92,15 +93,38 @@ p {
   align-items: center;
 }
 
+.equilibrium-img {
+  max-height: 250px;
+}
+
 .equilibrium-img img {
-  overflow: hidden;
+  /* overflow: hidden; */
   max-width: 100%;
   width: 250px;
   border-radius: 16px;
+  opacity: 1;
 }
 
-.eyeicon-img {
+.eyeicon-img img {
   position: absolute;
+  transition: 0.5 ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+}
+
+.img-holder:hover .equilibrium-img img {
+  opacity: 0.7;
+}
+
+.img-holder:hover .eyeicon-img img {
+  opacity: 1;
+}
+
+.img-holder:hover {
+  background-color: var(--Cyan);
 }
 
 /* Styling for card info section */
