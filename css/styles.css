@@ -78,6 +78,7 @@ p {
 .attribution {
   text-align: center;
   color: var(--Verydarkblueline);
+  margin-top: 1.5rem;
 }
 
 /* Image styling */
